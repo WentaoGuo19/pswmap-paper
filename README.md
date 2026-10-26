@@ -24,7 +24,8 @@ contains everything around it:
 
 ## Requirements
 
-- R (>= 4.1) and the package **pswmap**: `remotes::install_github("WentaoGuo19/pswmap")`. It installs RBesT and mice.
+- R (>= 4.1) and the package **pswmap** 1.0.0: `remotes::install_github("WentaoGuo19/pswmap@v1.0.0")`. It installs RBesT
+  and mice.
 - **bartMachine** (which needs Java), **ranger** and **xgboost** for the propensity score learners, and **MASS** for
   the data generation.
 - **ggplot2** and **patchwork** for the figures.
