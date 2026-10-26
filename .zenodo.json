@@ -1,0 +1,16 @@
+{
+  "upload_type": "software",
+  "creators": [
+    {"name": "Guo, Wentao", "affiliation": "Colorado State University"},
+    {"name": "Zhu, Angela Y.", "affiliation": "Boehringer Ingelheim"}
+  ],
+  "license": "gpl-3.0",
+  "keywords": [
+    "Bayesian dynamic borrowing",
+    "external controls",
+    "meta-analytic predictive prior",
+    "missing covariates",
+    "multiple imputation",
+    "propensity score"
+  ]
+}
