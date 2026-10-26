@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\caption{Strength of outcome dependence: excess source bias, relative MSE and type I error by the odds ratio of missingness per standard deviation of the outcome, for outcome-dependent MAR and NMAR with low covariate shift, linear selection, missing rates 20\% and 40\% and $c = 32$. No outcome heterogeneity. Averages over learners and 1{,}000 replicates per scenario. The dependence on the missing rate is shown in Figure~\ref{fig:strategies}.}
+\label{tab:dose}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{4}{c}{Odds ratio of missingness} \\
+\cmidrule(lr){2-5}
+ & 1.25 & 1.5 & 2 & 3 \\
+\midrule
+\multicolumn{5}{l}{\textit{Excess source bias}} \\
+\quad Complete-case & $-$0.103 & $-$0.165 & $-$0.252 & $-$0.353 \\
+\quad Native handling & $-$0.076 & $-$0.126 & $-$0.198 & $-$0.284 \\
+\quad MI & 0.018 & 0.010 & 0.001 & $-$0.014 \\
+\multicolumn{5}{l}{\textit{Relative MSE}} \\
+\quad Oracle (full data) & 0.422 & 0.418 & 0.411 & 0.414 \\
+\quad Complete-case & 0.596 & 0.767 & 1.096 & 1.399 \\
+\quad Native handling & 0.534 & 0.655 & 0.916 & 1.202 \\
+\quad MI & 0.440 & 0.432 & 0.425 & 0.430 \\
+\multicolumn{5}{l}{\textit{Type I error}} \\
+\quad Oracle (full data) & 0.017 & 0.020 & 0.017 & 0.021 \\
+\quad Complete-case & 0.046 & 0.083 & 0.114 & 0.136 \\
+\quad Native handling & 0.037 & 0.068 & 0.099 & 0.124 \\
+\quad MI & 0.014 & 0.017 & 0.015 & 0.022 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,36 @@
+\begin{table}[ht]
+\centering
+\caption{Missing-data strategies by missingness mechanism, without outcome heterogeneity. Excess source bias is the bias of a source's weighted mean beyond that of the oracle with the same learner, as a signed mean over the three sources. Prior ESS is the prior effective sample size of the robust PSW-MAP prior, and relative MSE is the MSE of the treatment effect divided by that of the RCT-only analysis (type I error of RCT-only: 0.026). Averages over learners, covariate shift, selection model, missing rates 10--50\%, $c$ and 1{,}000 replicates per scenario. MI uses the default imputation engine.}
+\label{tab:main}
+\begin{tabular}{lcccc}
+\toprule
+Strategy & Excess source bias & Relative MSE & Type I error & Prior ESS \\
+\midrule
+\multicolumn{5}{l}{\textit{MCAR}} \\
+\quad Oracle (full data) & (reference) & 0.626 & 0.031 & 64.3 \\
+\quad Complete-case & $-$0.015 & 0.668 & 0.033 & 52.1 \\
+\quad Native handling & $-$0.009 & 0.655 & 0.032 & 55.8 \\
+\quad MI & $-$0.001 & 0.621 & 0.029 & 60.3 \\
+\multicolumn{5}{l}{\textit{MAR}} \\
+\quad Oracle (full data) & (reference) & 0.617 & 0.027 & 64.3 \\
+\quad Complete-case & $-$0.042 & 0.682 & 0.032 & 50.8 \\
+\quad Native handling & $-$0.032 & 0.669 & 0.032 & 54.7 \\
+\quad MI & $-$0.005 & 0.611 & 0.026 & 60.0 \\
+\multicolumn{5}{l}{\textit{NMAR}} \\
+\quad Oracle (full data) & (reference) & 0.623 & 0.029 & 64.3 \\
+\quad Complete-case & $-$0.080 & 0.720 & 0.039 & 49.9 \\
+\quad Native handling & $-$0.051 & 0.689 & 0.036 & 53.6 \\
+\quad MI & 0.038 & 0.628 & 0.022 & 58.3 \\
+\multicolumn{5}{l}{\textit{MAR, outcome-dependent}} \\
+\quad Oracle (full data) & (reference) & 0.625 & 0.029 & 64.2 \\
+\quad Complete-case & $-$0.326 & 1.056 & 0.073 & 47.5 \\
+\quad Native handling & $-$0.253 & 0.989 & 0.069 & 51.3 \\
+\quad MI & $-$0.021 & 0.627 & 0.029 & 59.4 \\
+\multicolumn{5}{l}{\textit{NMAR, outcome-dependent}} \\
+\quad Oracle (full data) & (reference) & 0.625 & 0.028 & 64.3 \\
+\quad Complete-case & $-$0.356 & 1.073 & 0.071 & 46.2 \\
+\quad Native handling & $-$0.277 & 0.995 & 0.066 & 49.3 \\
+\quad MI & $-$0.024 & 0.652 & 0.025 & 54.9 \\
+\bottomrule
+\end{tabular}
+\end{table}

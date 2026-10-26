@@ -1,0 +1,7 @@
+sim_*/
+logs_*/
+submitted_main.txt
+submit_main.log
+.Rhistory
+.RData
+.DS_Store

@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\caption{Source-specific versus pooled propensity scores, applied to the same simulated datasets (16 scenarios with MAR missingness at a 20\% row-level rate). Source bias is the bias of each source's weighted mean, and Kish ESS is the effective sample size of a source's weights. Prior ESS and relative MSE (MSE of the treatment effect divided by that of the RCT-only analysis) are without outcome heterogeneity. Averages over learners, the oracle, complete-case and MI strategies, $c$ and 1{,}000 replicates per scenario.}
+\label{tab:pooled}
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{3}{c}{Source bias} & Mean & Kish & Prior & Relative \\
+\cmidrule(lr){2-4}
+Propensity score & $H_1$ & $H_2$ & $H_3$ & $|$bias$|$ & ESS & ESS & MSE \\
+\midrule
+\multicolumn{8}{l}{\textit{Low covariate shift}} \\
+\quad Source-specific & 0.008 & $-$0.086 & 0.024 & 0.048 & 84.8 & 82.8 & 0.516 \\
+\quad Pooled & 0.068 & $-$0.538 & 0.297 & 0.301 & 108.7 & 30.9 & 0.661 \\
+\multicolumn{8}{l}{\textit{High covariate shift}} \\
+\quad Source-specific & $-$0.453 & $-$0.230 & 0.081 & 0.259 & 35.6 & 37.3 & 0.738 \\
+\quad Pooled & $-$0.943 & $-$0.663 & 0.550 & 0.718 & 81.1 & 12.9 & 0.855 \\
+\bottomrule
+\end{tabular}
+\end{table}
